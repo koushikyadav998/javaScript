@@ -32,17 +32,58 @@ var c1=0;
 // obj.a=[20,30,40]
 // console.log(obj);
 // console.log(obj.mydata);
-const a = [
+
+
+// const a = [
+// {
+//     id : 1,
+//     name:"koushik",
+//     salary:56.0
+// },
+// {
+//     id:2,
+//     name:"kanna",
+//     salary:30.0
+// }  
+// ]
+// console.log(a[1].name);
+//forin-arrays
+//forof-objects
+
+// function myclass(a,b)
+// {
+//     return a+b;
+// }
+// function sub(a,b)
+// {
+//     return a-b;
+// }
+// console.log(sub(20,12));
+let a;
+let b;
+let op;
+function doMath(a,b,op)
 {
-    id : 1,
-    name:"koushik",
-    salary:56.0
-},
-{
-    id:2,
-    name:"kanna",
-    salary:30.0
-}  
-]
-console.log(a[1].name);
+    
+    switch(op)
+    {
+        case '+': console.log(`first no${a}. second is ${b} sum of ${a+b}`);
+                    break;
+        case '-':  console.log(`first no${a}. second is ${b} sum of ${a-b}`);
+                    break;
+        case '*':   console.log(`first no${a}. second is ${b} sum of ${a*b}`);
+                    break;
+        case '/':   console.log(`first no${a}. second is ${b} sum of ${a/b}`);
+                    break;
+        default:    console.log(`invalid number`);
+                    break;
+    }
+}
+
+
+
+// let name="koushik";
+// let age="22";
+// console.log(`My...name is ${name}. my age is ${age}`);
+// console.log("My...name is "+name+". my age is "+age);
 
